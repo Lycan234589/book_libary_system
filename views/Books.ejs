@@ -1,0 +1,38 @@
+<%- include("partials/Header.ejs") -%> <%- include("partials/Navbar") -%>
+
+<div class="header box">
+  <h1>Tannu's Library</h1>
+  
+
+    <div class="btn-group" role="group">
+      <a href="/genre" class="btn btn-light m-1">All Books</a>
+      <a href="/genre/thriller" class="btn btn-light m-1">Thriller</a>
+      <a href="/genre/romance" class="btn btn-light m-1">Romance</a>
+      <a href="/genre/horror" class="btn btn-light m-1">Horror</a>
+      <a href="/genre/fantasy" class="btn btn-light m-1">Fantasy</a>
+      <a href="/genre/drama" class="btn btn-light m-1">Drame</a>
+      <a href="/genre/biography" class="btn btn-light m-1">Biography</a>
+      <a href="/genre/adventure" class="btn btn-light m-1">Adventure</a>
+      <a href="/genre/reality" class="btn btn-light m-1">Reality</a>
+      <a href="/genre/sci-fi" class="btn btn-light m-1">Sci-Fi</a>
+      <a href="/genre/action" class="btn btn-light m-1">Action</a>
+      <a href="/genre/comedy" class="btn btn-light m-1">Comedy</a>
+      <a href="/genre/other" class="btn btn-light m-1">Others</a>
+     
+    </div>
+ 
+</div>
+
+<div id="books" class="books box">
+  <% if (typeof data===typeof []) {%> <% data.forEach((book_object)=>{ %>
+  <div class="book">
+    <div class="book_name"><%= book_object.title %></div>
+    <div class="book_author"><%= book_object.author %></div>
+    <div class="genre"><%= book_object.genre %></div>
+  </div>
+  <% }) %> <% }else{ %>
+  <h2>No Books Found</h2>
+  <% } %>
+</div>
+
+<%-include("partials/Footer.ejs")-%>

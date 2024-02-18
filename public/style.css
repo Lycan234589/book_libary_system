@@ -1,0 +1,90 @@
+body{
+    min-height: 100vh;
+    background:  linear-gradient(90deg , rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)) ,url("https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.cont{
+}
+
+.box{
+background: rgba(70, 70, 70, 0.4);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login,.signup,.add_book{
+    text-align: center;
+    color:#fff;
+    width: 40%;
+    padding:2rem 4rem;
+    margin:4rem auto 0;
+}
+
+.login form,.signup form{
+
+    margin:auto
+}
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+    text-align: center;
+    margin:4rem auto 0;
+    width:80%;
+    color:#fff;
+    border-radius:4px;
+}
+
+.books{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding:1rem;
+    text-align: center;
+    margin:1rem auto 4rem;
+    width:80%;
+    color:#fff;
+    border-radius:4px;
+    
+}
+.book{
+    text-align: left;
+ width:100%;
+ padding:1rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border-bottom: 2px solid #ccc;
+}
+
+.book:last-child{
+    border:none;
+}
+
+.book .book_name{
+    width:50%;
+    
+}
+.book .book_author{
+    width:30%;
+    text-align: left;
+}
+.book .genre{
+    width:20%;
+}
+.dropdown-menu{
+    position: relative;
+    z-index: 999;
+}

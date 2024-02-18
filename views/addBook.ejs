@@ -1,0 +1,42 @@
+<%-include("partials/Header")-%> <%-include("partials/Navbar")-%>
+
+<div id="add-expense" class="cont box add_book">
+ <h1>Add New Book</h1>
+  <form action="/add" method="post">
+    <div class="form-group">
+      <input
+        type="text"
+        name="title"
+        placeholder="Book Title"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        name="author"
+        placeholder="Author Name"
+        class="form-control"
+      />
+    </div>
+    <div class="form-group">
+     <select name="genre"  class="form-control">
+      <option value="thriller">Thriller</option>
+      <option value="romance">Romance</option>
+      <option value="horror">Horror</option>
+      <option value="fantasy">Fantasy</option>
+      <option value="drama">Drama</option>
+      <option value="biography">Biography</option>
+      <option value="adventure">Adventure</option>
+      <option value="reality">Reality</option>
+      <option value="sci-fi">Sci-Fi</option>
+      <option value="action">Action</option>
+      <option value="comedy">Comedy</option>
+      <option value="other">Others</option>
+     </select>
+    </div>
+    <button class="btn btn-dark btn-block" type="submit" >Add Book</button>
+  </form>
+</div>
+
+<%-include("partials/Footer")-%>
